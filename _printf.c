@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "main.h"
 
 /**
@@ -56,6 +57,8 @@ int _printf(const char *format, ...)
 }
 
 edcdvdv
+=======
+>>>>>>> 1ff5158 (creation of the _printf.c file / handle-char coding)
 #include <stdarg.h>
 #include <unistd.h>
 
@@ -74,6 +77,9 @@ int handle_char(va_list args)
 
 	return (1);
 }
+<<<<<<< HEAD
  1ff5158 (creation of the _printf.c file / handle-char coding)
 =======
 >>>>>>> 81a22fd (Modification of the _printf.c file and creation of the handle_string.c file because I made a mistake during the merge.)
+=======
+>>>>>>> 1ff5158 (creation of the _printf.c file / handle-char coding)
