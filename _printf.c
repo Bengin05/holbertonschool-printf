@@ -1,6 +1,13 @@
 #include <unistd.h>
 #include <stdarg.h>
 
+/**
+ * handle_decimal - Handles the %d conversion specifier
+ * @args: the list of arguments from _printf
+ *
+ * Return: number of characters printed
+ */
+
 int handle_decimal(va_list args)
 {
 	int n = va_arg(args, int);
