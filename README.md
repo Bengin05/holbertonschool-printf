@@ -8,4 +8,7 @@ We must not forget to transfer our header file./ All header files must be protec
 Examples of using the _printf function:
 Man page:
 Testing: 
-Flowchart:
+##
+## Flowchart: 
+
+<img src="image/logo.png" width="800" alt="flowchart">
