@@ -6,9 +6,12 @@ We are not permitted to use global variables. / No more than 5 functions per fil
 All prototypes for all our functions must be included in our header file called main.h./
 We must not forget to transfer our header file./ All header files must be protected by an include tag.
 Examples of using the _printf function:
-Man page:
-Testing: 
 ##
+## Man page:
+
+<img src="image/man.png" width="400">
+<img src="image/man1.png" width="600">
+
 ## Flowchart: 
 
-<img src="image/logo.png" width="800" alt="flowchart">
+<img src="image/logo.png" width="800">
