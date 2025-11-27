@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h"
 
 /**
@@ -74,3 +75,5 @@ int handle_char(va_list args)
 	return (1);
 }
  1ff5158 (creation of the _printf.c file / handle-char coding)
+=======
+>>>>>>> 81a22fd (Modification of the _printf.c file and creation of the handle_string.c file because I made a mistake during the merge.)
