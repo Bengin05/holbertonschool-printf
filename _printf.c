@@ -40,7 +40,10 @@ int _printf(const char *format, ...)
 			else if (format[i] == 'i')
 				count += handle_integer(args);
 			else
-				count += write(1, &format[i], 1);
+			{
+				i++;
+				continue;
+			}
 		}
 		else
 		{
