@@ -17,6 +17,7 @@ int handle_string(va_list args)
 	}
 
 	return (count);
+}
 /**
  * handle_char - Prints a character
  * @args: The va_list containing the character to print
