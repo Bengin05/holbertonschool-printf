@@ -1,18 +1,44 @@
 #include "main.h"
 
-
 /**
- * handle_char - Prints a character
- * @args: The va_list containing the character to print
+ * handle_decimal - Handles the %d conversion specifier
+ * @args: the list of arguments from _printf
  *
- * Return: Number of characters printed (1)
+ * Return: number of characters printed
  */
-int handle_char(va_list args)
+
+int handle_decimal(va_list args)
 {
-	char c;
+	int n = va_arg(args, int);
+	int count = 0;
+	long num = n;
+	char buffer[12];
+	int i = 0;
 
-	c = va_arg(args, int);
-	write(1, &c, 1);
+	if (num < 0)
+	{
+		write(1, "-", 1);
+		count++;
+		num = -num;
+	}
 
-	return (1);
+	if (num == 0)
+	{
+		write(1, "0", 1);
+		return (count + 1);
+	}
+
+	while (num > 0)
+	{
+		buffer[i++] = (num % 10) + '0';
+		num /= 10;
+	}
+
+	while (i--)
+	{
+		write(1, &buffer[i], 1);
+		count++;
+	}
+
+	return (count);
 }
