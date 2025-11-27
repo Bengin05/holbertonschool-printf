@@ -1,12 +1,4 @@
 #include "main.h"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-#include <unistd.h>
->>>>>>> 81a22fd (Modification of the _printf.c file and creation of the handle_string.c file because I made a mistake during the merge.)
-=======
-#include <unistd.h>
->>>>>>> 81a22fd (Modification of the _printf.c file and creation of the handle_string.c file because I made a mistake during the merge.)
 
 /**
  * handle_string - Prints a string
@@ -14,6 +6,7 @@
  *
  * Return: Number of characters printed
  */
+ 
 int handle_string(va_list args)
 {
 	char *str = va_arg(args, char *);

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4d24201 (fills in the _printf.c file)
 #include "main.h"
 
 /**
@@ -58,34 +53,3 @@ int _printf(const char *format, ...)
 	va_end(args);
 	return (count);
 }
-<<<<<<< HEAD
-
-edcdvdv
-=======
->>>>>>> 1ff5158 (creation of the _printf.c file / handle-char coding)
-#include <stdarg.h>
-#include <unistd.h>
-
-/**
- * handle_char - Prints a character
- * @args: The va_list containing the character to print
- *
- * Return: Number of characters printed (1)
- */
-int handle_char(va_list args)
-{
-	char c;
-
-	c = va_arg(args, int);
-	write(1, &c, 1);
-
-	return (1);
-}
-<<<<<<< HEAD
- 1ff5158 (creation of the _printf.c file / handle-char coding)
-=======
->>>>>>> 81a22fd (Modification of the _printf.c file and creation of the handle_string.c file because I made a mistake during the merge.)
-=======
->>>>>>> 1ff5158 (creation of the _printf.c file / handle-char coding)
-=======
->>>>>>> 4d24201 (fills in the _printf.c file)
