@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4d24201 (fills in the _printf.c file)
 #include "main.h"
 
 /**
@@ -55,6 +58,7 @@ int _printf(const char *format, ...)
 	va_end(args);
 	return (count);
 }
+<<<<<<< HEAD
 
 edcdvdv
 =======
@@ -83,3 +87,5 @@ int handle_char(va_list args)
 >>>>>>> 81a22fd (Modification of the _printf.c file and creation of the handle_string.c file because I made a mistake during the merge.)
 =======
 >>>>>>> 1ff5158 (creation of the _printf.c file / handle-char coding)
+=======
+>>>>>>> 4d24201 (fills in the _printf.c file)
