@@ -1,7 +1,4 @@
 #include "main.h"
-feature/man-page
-#include <unistd.h>
-main
 
 /**
  * handle_string - Prints a string
@@ -9,11 +6,7 @@ main
  *
  * Return: Number of characters printed
  */
-feature/man-page
- 
 
-
-main
 int handle_string(va_list args)
 {
 	char *str = va_arg(args, char *);
