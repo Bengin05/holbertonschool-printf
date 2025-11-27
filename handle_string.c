@@ -1,4 +1,8 @@
 #include "main.h"
+<<<<<<< HEAD
+=======
+#include <unistd.h>
+>>>>>>> 81a22fd (Modification of the _printf.c file and creation of the handle_string.c file because I made a mistake during the merge.)
 
 /**
  * handle_string - Prints a string
