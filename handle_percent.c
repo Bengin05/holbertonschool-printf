@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
  * handle_percent - Prints the '%' character to standard output.
