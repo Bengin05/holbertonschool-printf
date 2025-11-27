@@ -6,7 +6,8 @@
  *
  * Return: Number of characters printed
  */
-int handle_int(va_list args)
+
+int handle_integer(va_list args)
 {
 	int n, count = 0;
 	char buffer[12];
