@@ -2,9 +2,9 @@
 
 /**
  * handle_char - Prints a character
- * @args: The va_list containing the character to print
+ * @args: Argument list containing the character
  *
- * Return: Number of characters printed (1)
+ * Return: Number of characters printed
  */
 int handle_char(va_list args)
 {

@@ -1,23 +1,16 @@
 #include "main.h"
 
 /**
- * _printf - Produces output according to a format string
- * @format: A character string containing normal characters
- *          and conversion specifiers
+ * _printf - Custom printf function
+ * @format: Format string containing characters and format specifiers
  *
- * Description: Parses the format string and calls the appropriate handle
- * function for each conversion
- * specifier (%c, %s, %%, %d, %i). Counts
- * and returns the total number of characters
- * printed (excluding the null byte).
- *
- * Return: The number of characters printed, or -1 on failure
+ * Return: Number of characters printed, or -1 on error
  */
-
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int i = 0, count = 0;
+	int i = 0;
+	int count = 0;
 
 	if (!format)
 		return (-1);
@@ -29,20 +22,22 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
+			if (!format[i])
+				return (-1);
+
 			if (format[i] == 'c')
 				count += handle_char(args);
 			else if (format[i] == 's')
 				count += handle_string(args);
 			else if (format[i] == '%')
 				count += handle_percent();
-			else if (format[i] == 'd')
+			else if (format[i] == 'i' || format[i] == 'd')
 				count += handle_decimal(args);
-			else if (format[i] == 'i')
-				count += handle_integer(args);
 			else
 			{
-				i++;
-				continue;
+				write(1, "%", 1);
+				write(1, &format[i], 1);
+				count += 2;
 			}
 		}
 		else

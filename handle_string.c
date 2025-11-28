@@ -2,17 +2,17 @@
 
 /**
  * handle_string - Prints a string
- * @args: The va_list containing the string to print
+ * @args: Argument list containing the string
  *
  * Return: Number of characters printed
  */
-
 int handle_string(va_list args)
 {
-	char *str = va_arg(args, char *);
+	char *str;
 	int i = 0;
 
-	if (str == NULL)
+	str = va_arg(args, char *);
+	if (!str)
 		str = "(null)";
 
 	while (str[i])

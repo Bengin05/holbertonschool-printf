@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * handle_decimal - Handles the %d conversion specifier
- * @args: the list of arguments from _printf
+ * handle_decimal - Prints a signed integer
+ * @args: Argument list containing the integer
  *
- * Return: number of characters printed
+ * Return: Number of characters printed
  */
-
 int handle_decimal(va_list args)
 {
-	int n = va_arg(args, int);
-	int count = 0;
-	long num = n;
+	int n;
+	long num;
 	char buffer[12];
 	int i = 0;
+	int count = 0;
+
+	n = va_arg(args, int);
+	num = n;
 
 	if (num < 0)
 	{
